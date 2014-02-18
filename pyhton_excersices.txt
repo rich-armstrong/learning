@@ -1,0 +1,10 @@
+EXERCISE METHODS
+
+>>> this_array = ["this", "that"]
+>>> this_array
+['this', 'that']
+>>> this_array += ["and", "the","other","thing"]
+>>> this_array
+['this', 'that', 'and', 'the', 'other', 'thing']
+
+take this array, multiple it by two and add an "AND" between the two adds!

@@ -1,0 +1,96 @@
+Python stuff
+
++-*/% are all the same
+
+#int division
+>>> 3//7 
+0
+
+#exponentiation
+>>> 3**3
+27
+
+#assigning variables - everything is an object (ex: can not assign int)
+>>> base = 20
+
+
+control p takes you to your last calculation or assignment
+
+#gives a list of built in functions
+>>>dir 
+
+#gets the documentation for the function
+help(abs)
+
+#def (defines a function, f is the functions names, (x) are the function parameters, : is important!!!!)
+>>>def f(x):
+	return ** 2
+
+not and or ***DO NOT USE && || !***
+
+triple quotes signify a multiple line string!
+
+
+Why is this possible without a global variable? No pointers?
+def fib(n):
+    print 'n =', n
+    if n > 1:
+        return n * fib(n - 1)
+    else:
+        print 'end of the line'
+        return 1    
+
+
+Making a Dictionary
+>>> pets = {"dog" : "Brinkly", "cat" : "BB"} 	//initializing a dic
+>>> pets
+{'cat': 'BB', 'dog': 'Brinkly'}
+>>>del pets[Brinkly]							//deleting an item
+{'cat': 'BB'}
+>>>pets.clear									//clearing the dic
+>>>pets
+{}
+>>>pets["dog"] = "doc"							//adding an object
+
+
+Making a list or array
+this_array = ["this","that"]						//array declaration
+this_array.extend(["and","the","other","thing"])	//extends the array
+this_array.insert(2, "new")							//insert at location
+this_array.append("new")							//adds to the end
+len(this_array)										//returns length
+
+difference between append and extend
+>>> li = ['a', 'b', 'c']
+>>> li.extend(['d', 'e', 'f'])
+>>> li
+['a', 'b', 'c', 'd', 'e', 'f']
+>>> len(li)
+6
+>>> li[−1]
+'f'
+>>> li = ['a', 'b', 'c']
+>>> li.append(['d', 'e', 'f'])
+>>> li
+['a', 'b', 'c', ['d', 'e', 'f']]
+>>> len(li)
+4
+>>> li[−1]
+['d', 'e', 'f']
+
+slicing is done by this_array[:] to get all of the entries
+this_array[0:-1] == this_array[:-1]
+
+this_array = ["this","that"]
+>>> this_array.index("this")
+0
+>>> "thing" in this_array
+False
+>>> this_array.remove ("that")
+>>> this_array
+["this"]
+
+li.pop()
+pop = AWESOME! removes and returns an object from the list
+
+this_array += ["and, "the", "other", "thing"]
